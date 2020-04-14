@@ -1,6 +1,6 @@
 
 .Rptoj.user
-*.html
+.html
 *.csv
 .Rhistory
 
