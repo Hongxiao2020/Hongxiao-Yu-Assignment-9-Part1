@@ -60,6 +60,8 @@ ggplot(abuse) +
 ggplot(abuse, aes(x = cpa, y = ptsd)) +
   geom_point(mapping = aes(color = csa)) +
    labs(x= "Childhood physical abuse scale", y = "PTSD Scores", 
+        color = "Childhood Sexual Abuse",
         title = "Ccatterplot of PTSD Scores and childhood physical abuse scores") +
+  theme(legend.position = "top") +
   stat_smooth(method = "lm", mapping = aes(color = csa))
 ```
